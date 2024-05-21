@@ -18,10 +18,10 @@
                 <div class="d-flex justify-content-center">
                     <div class="searchbar d-flex ">
                         <div class="col-lg-11 col-sm-10">
-                            <input class="input-controller" type="text" name="" placeholder="Enter location name">
+                            <input class="input-controller" type="text" placeholder="Enter location" id="txt-location">
                         </div>
                         <div class="col-lg-1 col-sm-2">
-                            <button class="button-class"><img src="image/search.png" alt=""></button>
+                            <button class="button-class" onclick="find()"><img src="image/search.png" alt=""></button>
                         </div>
                     </div>
                 </div>
@@ -29,17 +29,19 @@
         </div>
 
         <div class="row">
-            <div class="col-12">
-                <div class="d-flex justify-content-center ">
-                    <div class="resultBar ">
-                        <div class="result-image">
-                            <img src="image/Partly Cloudy.png" width="200px">
-                        </div>
-                        <div class="result-tempreture">
-                            <h1>13&deg;C</h1>
-                        </div>
-                        <div class="result-wether">
-                            <h4>Partly Cloudy</h4>
+            <div class="col-12 ">
+                <div class="results" id="results">
+                    <div class="d-flex justify-content-center ">
+                        <div class="resultBar ">
+                            <div class="result-image">
+                                <img src="image/Partly Cloudy.png" width="200px">
+                            </div>
+                            <div class="result-tempreture">
+                                <h1 id="temperature"></h1>
+                            </div>
+                            <div class="result-wether">
+                                <h4 id="WeatherName"></h4>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -54,6 +56,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="App.js"></script>
+    <script>
+        AOS.init({
+            duration: 3000
+        });
+    </script>
 </body>
 
 </html>

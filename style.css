@@ -21,6 +21,11 @@ html {
     width: 550px;
 }
 
+.results {
+    visibility: hidden;
+    transition: transform 1s ease;
+}
+
 .input-controller {
     margin-left: 18px;
     background: transparent;
