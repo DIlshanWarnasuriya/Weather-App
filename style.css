@@ -1,0 +1,78 @@
+body,
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #303d4e !important;
+}
+
+.container {
+    margin-top: 8%;
+}
+
+.searchbar {
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 60px;
+    background-color: rgb(255, 255, 255, .1);
+    border-radius: 30px;
+    padding: 10px;
+    width: 550px;
+}
+
+.input-controller {
+    margin-left: 18px;
+    background: transparent;
+    border: none;
+    outline: none;
+    caret-color: transparent;
+    width: 93%;
+    font-size: 25px;
+    color: white;
+}
+
+input::placeholder {
+    color: rgb(205, 205, 205);
+}
+
+.button-class {
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
+.button-class img {
+    width: 30px;
+    margin-top: 5px;
+}
+
+.resultBar {
+    margin-top: 20px;
+    height: 400px;
+    background-color: rgb(255, 255, 255, .1);
+    border-radius: 30px;
+    padding: 10px;
+    width: 550px;
+}
+
+
+
+.result-image {
+    text-align: center;
+}
+
+.result-tempreture {
+    text-align: center;
+    color: white;
+}
+
+.result-tempreture h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.result-wether {
+    text-align: center;
+    color: white;
+}
