@@ -39,6 +39,7 @@ $(document).ready(function () {
 
 
                         $('.result').slideDown();
+                        locationtxt.value = "";
                     }
 
                 }
